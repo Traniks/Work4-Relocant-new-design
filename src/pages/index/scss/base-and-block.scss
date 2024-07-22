@@ -12,7 +12,7 @@
 
     box-sizing: border-box;
 
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Bebas Neue Pro", sans-serif;
 }
 
 html {
@@ -20,6 +20,7 @@ html {
 }
 
 body {
+    padding: 0 0 40px 0;
     position: relative;
     background-color: var(--bg-main);
 }
@@ -34,7 +35,13 @@ a {
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 320px;
     padding: 0 20px;
     margin: 0 auto;
+}
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 1240px;
+    }
 }

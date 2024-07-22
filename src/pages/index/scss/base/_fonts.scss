@@ -14,11 +14,11 @@ $font-path: '../../fonts/';
     }
 }
 
-@include font-face("BebasNeuePro", "BebasNeuePro-Regular", 400); // Номер телефона
+@include font-face("Bebas Neue Pro Num", "BebasNeuePro-Regular", 400); // Номер телефона
 
 @include font-face("DAMN", "DAMN-Regular", 400); // Заголовки
-@include font-face("BebasNeuePro", "BebasNeuePro-ExpandedBold", 700); // Микро заголовки и кнопки
+@include font-face("Bebas Neue Pro", "BebasNeuePro-ExpandedBold", 700); // Микро заголовки и кнопки
 
-@include font-face("BebasNeuePro", "BebasNeuePro-ExpandedRegular", 400); // Текст
+@include font-face("Bebas Neue Pro", "BebasNeuePro-ExpandedRegular", 400); // Текст
 
-@include font-face("BebasNeuePro", "BebasNeuePro-SemiExpandedExtraBold", 800); // Блоки плюсов
+@include font-face("Bebas Neue Pro", "BebasNeuePro-SemiExpandedExtraBold", 800); // Блоки плюсов

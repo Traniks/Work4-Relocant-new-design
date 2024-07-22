@@ -1,0 +1,120 @@
+.possibilities {
+    padding: 50px 0 0 0;
+
+    &__title {
+        font-family: DAMN;
+        font-size: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+        font-weight: 400;
+        line-height: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+        text-align: center;
+
+        text-transform: uppercase;
+        text-wrap: balance;
+        color: var(--text-title-second);
+
+        span {
+            color: var(--text-title);
+            font-size: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+            font-family: DAMN;
+            font-weight: 400;
+            line-height: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+        }
+    }
+
+    &__wrapper {
+        margin: 38px 0 0 0;
+
+        display: grid;
+        row-gap: 20px;
+        column-gap: 30px;
+
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    &__box {
+        padding: 1px 20px 60px 20px;
+        display: flex;
+
+        min-width: 280px;
+        height: 240px;
+
+        flex-direction: column;
+        align-items: center;
+
+        background: var(--bg-box);
+        border-radius: 30px;
+    }
+
+    &__box-img {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        
+        border-radius: 0px 0px 26px 26px;
+        background: rgb(229, 206, 174);
+
+        img {
+            
+        }
+    }
+
+    &__box-text {
+        margin: 28px 0 0 0;
+
+
+        font-size: 23px;
+        font-weight: 800;
+        line-height: 110%;
+        
+        text-wrap: balance;
+        text-align: center;
+    }
+}
+
+@media(min-width: 768px) {
+    .possibilities {
+        &__wrapper {
+            grid-template-columns: repeat(4, 140px)
+        }
+        &__box {
+            grid-column: span 2;
+        }
+        &__box:last-child {
+            grid-column: 2/4;
+        }
+    }
+}
+@media(min-width: 1024px) {
+    .possibilities {
+        &__title {
+            font-size: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            line-height: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            span {
+                font-size: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+                line-height: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            }
+        }
+        &__wrapper {
+            grid-template-columns: repeat(4, 190px);
+        }
+    }
+}
+@media(min-width: 1240px) {
+    .possibilities {
+        &__wrapper {
+            grid-template-columns: repeat(3, 380px);
+        }
+        &__box {
+            grid-column: span 1;
+        }
+        &__box:last-child {
+            grid-column: unset;
+        }
+    }
+}
