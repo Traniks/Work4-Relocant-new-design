@@ -1,0 +1,24 @@
+$font-path: '../../fonts/';
+
+@mixin font-face($font-family, $font-name, $weight) {
+    @font-face {
+        font-family: "#{$font-family}";
+        src: url('#{$font-path}#{$font-name}.eot');
+        src: url('#{$font-path}#{$font-name}.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}#{$font-name}.woff') format("woff"),
+        url('#{$font-path}#{$font-name}.woff2') format("woff2"),
+        url('#{$font-path}#{$font-name}.ttf') format('truetype');
+        font-weight: #{$weight};
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+@include font-face("BebasNeuePro", "BebasNeuePro-Regular", 400); // Номер телефона
+
+@include font-face("DAMN", "DAMN-Regular", 400); // Заголовки
+@include font-face("BebasNeuePro", "BebasNeuePro-ExpandedBold", 700); // Микро заголовки и кнопки
+
+@include font-face("BebasNeuePro", "BebasNeuePro-ExpandedRegular", 400); // Текст
+
+@include font-face("BebasNeuePro", "BebasNeuePro-SemiExpandedExtraBold", 800); // Блоки плюсов

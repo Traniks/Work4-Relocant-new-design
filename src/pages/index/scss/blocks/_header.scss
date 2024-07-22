@@ -1,0 +1,26 @@
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: var(--header-bg);
+    padding: 12px 0;
+    z-index: var(--index-elem-3);
+
+    &__wrapper {
+        display: flex;
+        position: relative;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: clamp(1.188rem, 1.098rem + 0.45vw, 1.5rem);
+        font-weight: 700;
+        color: var(--text-second);
+        z-index: var(--index-elem-3);
+    }
+
+    
+}

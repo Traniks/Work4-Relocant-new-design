@@ -1,0 +1,28 @@
+{
+	"name": "project-3",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack --config webpack/webpack.config.prod.js",
+		"build-dev": "webpack --config webpack/webpack.config.common.js",
+		"dev-server": "webpack serve --config webpack/webpack.config.common.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		
+	},
+	"devDependencies": {
+		"webpack-cli": "^5.1.4",
+		"copy-webpack-plugin": "^12.0.2",
+		"css-loader": "^7.1.2",
+		"html-bundler-webpack-plugin": "^3.15.1",
+		"normalize-scss": "^8.0.0",
+		"sass": "^1.77.8",
+		"sass-loader": "^14.2.1",
+		"webpack": "^5.93.0",
+		"webpack-dev-server": "^5.0.4",
+		"webpack-merge": "^6.0.1"
+	}
+}

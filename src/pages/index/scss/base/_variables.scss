@@ -1,0 +1,22 @@
+:root {
+    // background
+    --bg-main: #e4cdad;
+    --bg-box: rgba(253, 248, 236, 0.8);
+
+    // header
+    --header-bg: #00000000;
+    --footer-bg: #00000000;
+
+    //text
+    --text-main: #5a4d47;
+    --text-second: #ffffff;
+
+    // z-index
+    --index-elem-1: 1; // Для наползающих элементов
+    --index-elem-2: 2; // Для наползающих элементов
+    --index-elem-3: 3; // Для наползающих элементов
+    --index-mask: 4; // Для масок и оверлеев
+    --index-sidebar: 5; // Для сайдбаров
+    --index-modal: 6; // Для модалок
+    --index-topmost: 7; // Для перекрывающих все элементов
+}
