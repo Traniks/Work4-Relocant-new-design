@@ -30,7 +30,8 @@
 
 .swiper {
     margin: 0 auto 0 auto;
-    padding: 50px 0 50px 0;
+    // padding: 50px 0 50px 0;
+    padding: 50px 0 70px 0;
     width: 280px;
 }
 
@@ -39,8 +40,9 @@
 
 .swiper-slide {
     position: relative;
-    height: 440px;
-    padding: 0 30px;
+    // height: 440px;
+    // padding: 0 30px;
+    height: 600px;
 
     &__iphone {
         position: relative;
@@ -85,6 +87,7 @@
 
 .swiper-button-prev {
     left: 0;
+    top: 97%;
     &:after {
         display: none;
         content: "";
@@ -95,12 +98,14 @@
         position: absolute;
         left: 0;
         z-index: var(--index-topmost);
-        width: 100%;
+        // width: 100%;
+        width: 44px;
     }
 }
 
 .swiper-button-next {
     right: 0;
+    top: 97%;
     &:after {
         display: none;
         content: "";
@@ -112,20 +117,18 @@
         right: 0;
         z-index: var(--index-topmost);
         transform: rotate(-180deg);
-        width: 100%;
+        // width: 100%;
+        width: 44px;
     }
-}
-
-.swiper-pagination {
 }
 
 @media(min-width: 520px) {
     .swiper {
-        width: 400px;
+        // width: 400px;
     }
     .swiper-slide {
-        padding: 0 50px;
-        height: 540px;
+        // padding: 0 50px;
+        // height: 540px;
     }
     .swiper-button-prev {
         img {
@@ -143,18 +146,39 @@
 }
 @media(min-width: 768px) {
     .swiper {
-        width: 400px;
+        // width: 400px;
     }
 }
 @media(min-width: 1200px) {
     .swiper {
         width: 1200px;
+        padding: 50px 0 50px 0;
+
+        &-slide {
+            position: relative;
+            height: 540px;
+            padding: 0 50px; 
+        }
+
+        &-button-prev {
+            top: var(--swiper-navigation-top-offset, 50%);
+            img {
+                width: 44px;
+            }
+        }
+        &-button-next {
+            top: var(--swiper-navigation-top-offset, 50%);
+            img {
+                width: 44px;
+            }
+        }
     }
     .swiper-slide {
         height: 700px;
     }
     
 }
+
 @media(min-width: 768px) {
     .stories {
         &__title {

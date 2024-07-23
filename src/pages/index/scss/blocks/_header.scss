@@ -77,6 +77,37 @@
             border: 0.82px solid rgb(255, 255, 255);
             background: rgb(29, 183, 128);
         }
+        &::after {
+            content: "";
+            position: absolute;
+
+            width: 14px;
+            height: 14px;
+
+            top: 0;
+            left: 10px;
+
+            border-radius: 50%;
+            border: 0.82px solid rgb(29, 183, 128);
+
+            animation: pulse 2.5s linear infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
     }
 
     &__phone-num {
