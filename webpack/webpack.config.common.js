@@ -1,6 +1,6 @@
 const path = require('path')
 const HtmlBundlerPlugin = require('html-bundler-webpack-plugin')
-// const CopyPlugin        = require("copy-webpack-plugin");
+const CopyPlugin        = require("copy-webpack-plugin");
 
 module.exports = {
 	mode: 'development',
@@ -23,9 +23,9 @@ module.exports = {
 				filename: 'assets/css/[name].[contenthash:8].css',
 			},
 		}),
-		// new CopyPlugin({
-		// 	patterns: ['public'],
-		// }),
+		new CopyPlugin({
+			patterns: ['public'],
+		}),
 	],
 
 	module: {

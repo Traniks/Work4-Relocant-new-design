@@ -66,6 +66,10 @@
         justify-content: space-between;
         gap: 40px;
         max-width: 400px;
+
+        img {
+            cursor: pointer;
+        }
     }
 
     a {
@@ -83,13 +87,15 @@
         padding: 5px;
         position: fixed;
 
-        top: 15vh;
+        top: 330px;
         right: clamp(1.25rem, -4.464rem + 8.93vw, 6.25rem);
 
         border-radius: 68px;
         
         box-shadow: 0px 7px 16px 0px rgba(112, 117, 113, 0.1), 0px 29px 29px 0px rgba(112, 117, 113, 0.09), 0px 64px 39px 0px rgba(112, 117, 113, 0.05), 0px 114px 46px 0px rgba(112, 117, 113, 0.01), 0px 179px 50px 0px rgba(112, 117, 113, 0);
         background: rgb(255, 249, 238);
+
+        z-index: var(--index-sidebar);
 
         .container {
             padding: 0px;

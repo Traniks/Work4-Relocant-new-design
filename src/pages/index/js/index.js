@@ -1,7 +1,7 @@
-import { block } from './blocks/block'
 import { slider } from './blocks/slider'
+import { modal } from './blocks/modal'
 
 document.addEventListener('DOMContentLoaded', () => {
-    block()
     slider()
+    modal()
 })

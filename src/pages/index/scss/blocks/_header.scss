@@ -7,6 +7,7 @@
     right: 0;
 
     background: var(--bg-second);
+    z-index: var(--index-elem-3);
 
     &__wrapper {
         display: flex;
@@ -188,13 +189,10 @@
 
 @media(min-width: 1024px) {
     .header {
+        padding: 40px 0 0 0;
 
         &__title {
             display: block;
-        }
-
-        &__wrapper {
-            margin: 40px 0 0 0;
         }
 
         &__phone-btn {

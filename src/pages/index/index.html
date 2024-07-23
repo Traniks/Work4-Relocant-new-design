@@ -17,9 +17,8 @@
 <body>
 
     <!-- TODO: -->
-    <!-- Блок HERO  -->
     <!-- При нажатии на соц сети и "Позвони мне" открывать попап -->
-    <!-- Добавить фоны -->
+    <!-- Добавить последний фон -->
 
     <header class="header">
         <div class="container">
@@ -38,7 +37,7 @@
                         <a href="#" class="header__phone-num">+971 54 768 2567</a>  
                     </div>
 
-                    <button class="header__phone-btn">Перезвоните мне</button>
+                    <button id="order-1" class="header__phone-btn">Перезвоните мне</button>
                 </div>
             </div>
         </div>
@@ -46,10 +45,76 @@
 
     <main>
 
+        <div class="bg-1"></div>
+        <div class="bg-2"></div>
+
         <!-- section-1 - Главная -->
-        <section class="hero" style="padding-top: 300px;">
+        <section class="hero">
             <div class="container">
-                
+                <h1 class="hero__title">Получение и продление<br>резидентской визы в ОАЭ<br><span>за 7 дней за 4999 AED<br>от 1 до 10 лет</span></h1>
+
+                <h3 class="hero__subtitle">С резидентской визой вы получаете возможность:</h3>
+                <ul class="hero__list">
+
+                    <li class="hero__list-item">
+                        <img src="./icons/check-mark.svg" alt="check mark">
+                        <p>Жить, пойти учиться и найти себе работу</p>
+                    </li>
+
+                    <li class="hero__list-item">
+                        <img src="./icons/check-mark.svg" alt="check mark">
+                        <p>Открыть компанию и запустить бизнес</p>
+                    </li>
+
+                    <li class="hero__list-item">
+                        <img src="./icons/check-mark.svg" alt="check mark">
+                        <p>Открыть счет и получить карту</p>
+                    </li>
+
+                    <li class="hero__list-item">
+                        <img src="./icons/check-mark.svg" alt="check mark">
+                        <p>Возможность купить недвижимость / авто</p>
+                    </li>
+
+                    <li class="hero__list-item">
+                        <img src="./icons/check-mark.svg" alt="check mark">
+                        <p>Аренда жилья дешевле на 50%</p>
+                    </li>
+                </ul>
+                <button class="hero__btn">ПОЛУЧИТЬ<br>точный расчёт</button>
+
+                <div class="hero__wrapper">
+
+                    <!-- box-1 -->
+                    <div class="hero__box">
+                        <img src="./icons/hero/hero-1.svg" alt="hero-1" class="hero__box-img">
+                        <h3 class="hero__box-title">Гарантия возврата<br>100% оплаты</h3>
+                        <p class="hero__box-description">Если вы по какой либо причине<br>получите отказ - вернем 100 %<br>оплаты</p>
+                    </div>
+
+                    <!-- box-2 -->
+                    <div class="hero__box">
+                        <img src="./icons/hero/hero-2.svg" alt="hero-2" class="hero__box-img">
+                        <h3 class="hero__box-title">Возможность<br>перевезти семью</h3>
+                        <p class="hero__box-description">После получения визы у вас<br>появляется возможность<br>спонсировать визы семьи</p>
+                    </div>
+
+                    <!-- box-3 -->
+                    <div class="hero__box">
+                        <img src="./icons/hero/hero-3.svg" alt="hero-3" class="hero__box-img">
+                        <h3 class="hero__box-title">Никаких скрытых<br>платежей</h3>
+                        <p class="hero__box-description">Все необходимые платежи полностью<br>включены в первоначальную<br>стоимость услуги</p>
+                    </div>
+
+                    <!-- box-4 -->
+                    <div class="hero__box">
+                        <img src="./icons/hero/hero-4.svg" alt="hero-4" class="hero__box-img">
+                        <h3 class="hero__box-title">Гарантия лучшей<br>цены</h3>
+                        <p class="hero__box-description">Если найдете аналогичную услугу<br>по более низкой цене, мы<br>предложим цену выгоднее</p>
+                    </div>
+
+                </div>
+
             </div>
         </section>
 
@@ -216,9 +281,13 @@
     
                     <button class="socials__btn">Напишите нам<br>в мессенджере</button>
                     <div class="socials__wrapper">
-                        <a href="#"><img src="./icons/socials/viber.svg" alt="viber" class="socials__wrapper-item"></a>
+                        <!-- <a href="#"><img src="./icons/socials/viber.svg" alt="viber" class="socials__wrapper-item"></a>
                         <a href="#"><img src="./icons/socials/whatsapp.svg" alt="whatsapp" class="socials__wrapper-item"></a>
-                        <a href="#"><img src="./icons/socials/telegram.svg" alt="telegram" class="socials__wrapper-item"></a>
+                        <a href="#"><img src="./icons/socials/telegram.svg" alt="telegram" class="socials__wrapper-item"></a> -->
+
+                        <img id="viber" src="./icons/socials/viber.svg" alt="viber" class="socials__wrapper-item">
+                        <img id="ws" src="./icons/socials/whatsapp.svg" alt="whatsapp" class="socials__wrapper-item">
+                        <img id="tg" src="./icons/socials/telegram.svg" alt="telegram" class="socials__wrapper-item">
                     </div>
                 </div>
             </div>
@@ -246,13 +315,130 @@
                         <a href="#" class="footer__phone-num">+971 54 768 2567</a>  
                     </div>
 
-                    <button class="footer__phone-btn">Перезвоните мне</button>
+                    <button id="order-2" class="footer__phone-btn">Перезвоните мне</button>
                 </div>
             </div>
             <div class="footer__dotted"></div>
 
         </div>
     </footer>
+
+    <!-- Модалка заказа звонка -->
+    <section class="modal-order" id="modal-order">
+        <div class="container">
+            <div class="modal-order__wrapper">
+                <img class="modal-order__cross" id="modal-order__cross" src="icons/cross.svg" alt="cross">
+
+                <div class="modal-order__content">
+                    <h2 class="modal-order__title">Введите свой номер телефона и мы свяжемся с вами</h2>
+
+                    <form class="modal-order__mail" id="modal-order__mail" action="mail.php" method="post">
+                        <input id="modal-order__input" placeholder="НОМЕР ТЕЛЕФОНА" name="username" required>
+
+                        <div class="modal-order__checkbox">
+                            <input checked="" type="checkbox" required>
+                            <p>Я согласен на обработку персональных данных</p>
+                        </div>
+
+                        <!-- <input type="hidden" value="" name="type" id="all-modal-type"> -->
+                        <button type="submit" class="modal-order__button" onclick="
+                        if(document.querySelector('#modal-order__input').validity.valid){
+                            document.querySelector('#modal-thanks').classList.add('modal-thanks_active');
+                            document.body.style.overflow = 'hidden';
+                            document.querySelector('#modal-order').classList.remove('modal-order_active');
+                        }
+                        ym(96940764, 'reachGoal', 'button_18'); return true;"
+                        >ОТПРАВИТЬ</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Модалка вайбер -->
+    <section class="modal-viber" id="modal-viber">
+        <div class="container container-fixed">
+            <div class="modal-viber__wrapper">
+                <img class="modal-viber__cross" id="modal-viber__cross" src="icons/cross.svg" alt="cross">
+
+                <div class="modal-viber__content">
+                    <h2 class="modal-viber__content-title">Напишите нам в viber</h2>
+
+                    <form class="modal-viber__mail" action="mail.php" method="post">
+                        
+                        <div class="modal-viber__socials">
+                            <a href="https://wa.me/971507190519" target="_blank">
+                                <img id="modal-viber__viber" class="modal-viber__socials-icon" src="./icons/socials/viber.svg" alt="whatsapp">
+                            </a>
+                        </div>
+
+                        <div class="modal-viber__checkbox">
+                            <input checked="" type="checkbox" required>
+                            <p>Я согласен на обработку персональных данных</p>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Модалка ватсапа -->
+    <section class="modal-ws" id="modal-ws">
+        <div class="container container-fixed">
+            <div class="modal-ws__wrapper">
+                <img class="modal-ws__cross" id="modal-ws__cross" src="icons/cross.svg" alt="cross">
+
+                <div class="modal-ws__content">
+                    <h2 class="modal-ws__content-title">Напишите нам в whatsapp</h2>
+
+                    <form class="modal-ws__mail" action="mail.php" method="post">
+                        
+                        <div class="modal-ws__socials">
+                            <a href="https://wa.me/971507190519" target="_blank">
+                                <img id="modal-ws__ws" class="modal-ws__socials-icon" src="./icons/socials/whatsapp.svg" alt="whatsapp">
+                            </a>
+                        </div>
+
+                        <div class="modal-ws__checkbox">
+                            <input checked="" type="checkbox" required>
+                            <p>Я согласен на обработку персональных данных</p>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Модалка телеграмма -->
+    <section class="modal-tg" id="modal-tg">
+        <div class="container container-fixed">
+            <div class="modal-tg__wrapper">
+                <img class="modal-tg__cross" id="modal-tg__cross" src="icons/cross.svg" alt="cross">
+
+                <div class="modal-tg__content">
+                    <h2 class="modal-tg__content-title">Напишите нам в telegram</h2>
+
+                    <form class="modal-tg__mail" action="mail.php" method="post">
+                        
+                        <div class="modal-tg__socials">
+                            <a href="https://t.me/relocant_oae_bot" target="_blank">
+                                <img id="modal-tg__tg" class="modal-tg__socials-icon" src="./icons/socials/telegram.svg" alt="telegram">
+                            </a>
+                        </div>
+
+                        <div class="modal-tg__checkbox">
+                            <input checked="" type="checkbox" required>
+                            <p>Я согласен на обработку персональных данных</p>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
     <script src="js/index.js"></script>

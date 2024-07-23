@@ -1,6 +1,9 @@
 .possibilities {
     margin: clamp(3.125rem, 2.775rem + 1.75vw, 4.875rem) 0 0 0;
 
+    position: relative;
+    z-index: var(--index-elem-2);
+
     &__title {
         font-family: DAMN;
         font-weight: 400;
