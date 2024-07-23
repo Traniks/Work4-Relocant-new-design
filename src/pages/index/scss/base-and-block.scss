@@ -39,6 +39,9 @@ a {
     padding: 0 20px;
     margin: 0 auto;
 }
+.container-fixed {
+    max-width: 1240px;
+}
 
 @media(min-width: 768px) {
     .container {

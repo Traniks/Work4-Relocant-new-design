@@ -1,26 +1,173 @@
 .header {
+    padding: 22px 0;
     position: absolute;
+
+    top: 0;
     left: 0;
     right: 0;
-    top: 0;
-    background-color: var(--header-bg);
-    padding: 12px 0;
-    z-index: var(--index-elem-3);
+
+    background: var(--bg-second);
 
     &__wrapper {
         display: flex;
-        position: relative;
-
+        gap: 10px;
         justify-content: space-between;
+        text-align: center;
+    }
+
+    &__left-box {
+        display: flex;
         align-items: center;
     }
 
     &__logo {
-        font-size: clamp(1.188rem, 1.098rem + 0.45vw, 1.5rem);
-        font-weight: 700;
-        color: var(--text-second);
-        z-index: var(--index-elem-3);
+        width: 120px;
+        display: block;
+        margin: 0 auto 0 0;
     }
 
-    
+    &__text {
+        color: rgb(90, 80, 80);
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+
+        display: none;
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0 0 0 26px;
+        text-align: start;
+    }
+
+    &__phone {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__phone-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    &__phone-box {}
+
+    &__phone-status {
+        display: none;
+        position: relative;
+        color: rgb(90, 80, 80);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: right;
+
+        &::before {
+            content: "";
+            position: absolute;
+
+            width: 14px;
+            height: 14px;
+
+            top: 0;
+            left: 10px;
+
+            border-radius: 50%;
+
+            border: 0.82px solid rgb(255, 255, 255);
+            background: rgb(29, 183, 128);
+        }
+    }
+
+    &__phone-num {
+        color: var(--text-title);
+
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 28px;
+
+        text-align: right;
+        font-family: DAMN;
+
+        
+    }
+
+    &__phone-btn {
+        display: none;
+
+        width: clamp(7.5rem, 1.398rem + 12.71vw, 11.25rem);
+        height: clamp(3.125rem, 2.108rem + 2.12vw, 3.75rem);
+
+        border: 2px solid rgb(255, 255, 255);
+        background: #00000000;
+        border-radius: 50px;
+
+        color: rgb(255, 255, 255);
+
+        font-size: clamp(0.875rem, 0.468rem + 0.85vw, 1.125rem);
+        font-weight: 700;
+        line-height: 18px;
+
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .header {
+        &__logo {
+            width: clamp(9.375rem, 3.782rem + 11.65vw, 12.813rem);
+            padding: 0 26px 0 0;
+        }
+
+        &__text {
+            display: block;
+        }
+
+        &__phone {
+            margin: 0;
+            gap: 20px;
+        }
+        &__phone-img {
+            width: 60px;
+            height: 60px;
+        }
+        &__phone-status {
+            display: block;
+        }
+        &__phone-num {
+            color: rgb(90, 80, 80);
+            font-family: Bebas Neue Pro Num;
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 40px;
+        }
+        &__phone-btn {
+            display: block;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .header {
+
+        &__title {
+            display: block;
+        }
+
+        &__wrapper {
+            margin: 40px 0 0 0;
+        }
+
+        &__phone-btn {
+            display: block;
+        }
+    }
 }

@@ -1,23 +1,25 @@
 .possibilities {
-    padding: 50px 0 0 0;
+    margin: clamp(3.125rem, 2.775rem + 1.75vw, 4.875rem) 0 0 0;
 
     &__title {
         font-family: DAMN;
-        font-size: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
         font-weight: 400;
-        line-height: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+
+        font-size: clamp(5rem, 4.5rem + 2.5vw, 7.5rem);
+        line-height: clamp(4.375rem, 4rem + 1.88vw, 6.25rem);
         text-align: center;
 
         text-transform: uppercase;
         text-wrap: balance;
-        color: var(--text-title-second);
+        color: var(--text-title);
 
         span {
-            color: var(--text-title);
-            font-size: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+            color: var(--text-title-second);
             font-family: DAMN;
             font-weight: 400;
-            line-height: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+
+            font-size: clamp(5rem, 4.5rem + 2.5vw, 7.5rem);
+            line-height: clamp(4.375rem, 4rem + 1.88vw, 6.25rem);
         }
     }
 
@@ -92,14 +94,6 @@
 }
 @media(min-width: 1024px) {
     .possibilities {
-        &__title {
-            font-size: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
-            line-height: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
-            span {
-                font-size: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
-                line-height: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
-            }
-        }
         &__wrapper {
             grid-template-columns: repeat(4, 190px);
         }

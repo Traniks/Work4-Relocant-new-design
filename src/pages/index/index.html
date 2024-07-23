@@ -16,18 +16,47 @@
 </head>
 <body>
 
+    <!-- TODO: -->
+    <!-- Блок HERO  -->
+    <!-- Блок STORIES  -->
+    <!-- При нажатии на соц сети и "Позвони мне" открывать попап -->
+    <!-- Добавить анимации на статус телефона и ещё где-нибудь  -->
+    <!-- Добавить фоны -->
+    <!-- Сделать что-нибудь с пунктиром в футере -->
+
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
+                <div class="header__left-box">
+                    <a href="#"><img src="./icons/logo.svg" alt="logo" class="header__logo"></a>
 
-                <a href="#" class="header__logo">Logo</a>
+                    <p class="header__text">Получение и продление<br>визы в ОАЭ</p>
+                </div>
+    
+                <div class="header__phone">
+                    <img class="header__phone-img" src="./icons/phone.svg" alt="phone" width="60" height="60">
+    
+                    <div class="header__phone-box">
+                        <p class="header__phone-status">Сейчас работаем – Звоните</p>
+                        <a href="#" class="header__phone-num">+971 54 768 2567</a>  
+                    </div>
 
+                    <button class="header__phone-btn">Перезвоните мне</button>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
 
+        <!-- section-1 - Главная -->
+        <section class="hero" style="padding-top: 300px;">
+            <div class="container">
+                
+            </div>
+        </section>
+
+        <!-- section-2 - Преимущества -->
         <section class="possibilities">
             <div class="container">
                 <h2 class="possibilities__title">Что <span>даёт<br> резидентская</span> виза?</h2>
@@ -110,12 +139,78 @@
             </div>
         </section>
 
+        <!-- section-3 - Отзывы -->
         <section class="stories">
-            <div class="container">
+            <div class="container container-fixed">
+                <h2 class="stories__title">Истории<br><span>наших клиентов</span></h2>
                 
+                <div id="stories-slider" class="stories__slider swiper">
+    
+                    <div class="swiper-wrapper">
+    
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__iphone">
+                                <div class="swiper-slide__screen">
+                                    <div class="swiper-slide__notch"></div>
+                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/nrqnvJCwilg?showinfo=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading" title="Отзыв 1" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__iphone">
+                                <div class="swiper-slide__screen">
+                                    <div class="swiper-slide__notch"></div>
+                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/OP5Mw_Lyhdg?showinfo=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading" title="Отзыв 2" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__iphone">
+                                <div class="swiper-slide__screen">
+                                    <div class="swiper-slide__notch"></div>
+                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/j4UJfT07GfA?showinfo=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading" title="Отзыв 3" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__iphone">
+                                <div class="swiper-slide__screen">
+                                    <div class="swiper-slide__notch"></div>
+                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/ALCJ-0OcU-U?showinfo=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading" title="Отзыв 4" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__iphone">
+                                <div class="swiper-slide__screen">
+                                    <div class="swiper-slide__notch"></div>
+                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/_cIWS84dB2A?showinfo=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading" title="Отзыв 5" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="swiper-button-prev">
+                        <img src="./icons/swipe-arrow.svg" alt="swipe arrow">
+                    </div>
+    
+                    <div class="swiper-button-next">
+                        <img src="./icons/swipe-arrow.svg" alt="swipe arrow">
+                    </div>
+                    
+                    <!-- <div class="swiper-pagination"></div> -->
+    
+                </div>
             </div>
+
         </section>
 
+        <!-- section-4 - Соц.сети -->
         <section class="socials">
             <div class="container">
                 <div class="socials__wrap">
@@ -136,6 +231,7 @@
 
     <footer class="footer">
         <div class="container">
+            <h2 class="footer__title">Свяжитесь<br><span>с Нами</span></h2>
             <div class="footer__wrapper">
                 <div class="footer__left-box">
                     <a href="#"><img src="./icons/logo.svg" alt="logo" class="footer__logo"></a>

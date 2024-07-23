@@ -4,6 +4,27 @@
     text-align: center;
     font-weight: 400;
 
+    &__title {
+        display: none;
+        font-family: DAMN;
+        font-weight: 400;
+        font-size: clamp(5rem, 4.5rem + 2.5vw, 7.5rem);
+        line-height: clamp(4.375rem, 4rem + 1.88vw, 6.25rem);
+        text-align: center;
+
+        text-transform: uppercase;
+        text-wrap: balance;
+        color: var(--text-title);
+
+        span {
+            color: var(--text-title-second);
+            font-family: DAMN;
+            font-weight: 400;
+            font-size: clamp(5rem, 4.5rem + 2.5vw, 7.5rem);
+                line-height: clamp(4.375rem, 4rem + 1.88vw, 6.25rem);
+        }
+    }
+
     &__wrapper {
         padding: 30px 0 40px 0;
 
@@ -25,7 +46,7 @@
     
     &__text {
         color: rgb(90, 80, 80);
-        
+
         font-size: 14px;
         font-weight: 400;
         line-height: 16px;
@@ -94,6 +115,7 @@
 @media(min-width: 768px) {
     .footer {
         &__wrapper {
+            padding: 50px 0;
             display: flex;
             justify-content: space-between;
         }
@@ -107,6 +129,15 @@
 }
 @media(min-width: 1024px) {
     .footer {
+
+        &__title {
+            display: block;
+        }
+
+        &__wrapper {
+            margin: 40px 0 0 0;
+        }
+
         &__phone-btn {
             display: block;
 
