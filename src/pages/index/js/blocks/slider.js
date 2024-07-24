@@ -45,6 +45,7 @@ export function slider() {
 		}
 	}
 
+	setNum()
 	// Вызываем функцию при загрузке страницы
 	window.addEventListener('load', setNum);
 	// Вызываем функцию при изменении размера окна

@@ -1,5 +1,7 @@
 .socials {
     padding: 75px 0 0 0;
+    position: relative;
+    z-index: var(--index-sidebar);
 
     &__title {
         font-family: DAMN;

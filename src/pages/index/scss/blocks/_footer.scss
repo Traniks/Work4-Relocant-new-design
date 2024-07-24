@@ -4,6 +4,9 @@
     text-align: center;
     font-weight: 400;
 
+    position: relative;
+    z-index: var(--index-elem-2);
+
     &__title {
         display: none;
         font-family: DAMN;
@@ -44,6 +47,8 @@
     }
 
     &__logo {
+        width: 205px;
+        height: 60px;
         padding: 0 26px 0 0;
         display: block;
         margin: 0 auto 0 0;

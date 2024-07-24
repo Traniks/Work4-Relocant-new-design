@@ -1,5 +1,8 @@
 .stories {
     margin: clamp(3.125rem, 2.2rem + 4.63vw, 7.75rem) auto 0 auto;
+    
+    position: relative;
+    z-index: var(--index-elem-2);
 
     &__title {
         margin: 0 auto;
