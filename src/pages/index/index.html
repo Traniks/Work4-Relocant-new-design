@@ -31,12 +31,12 @@
                 </div>
     
                 <div class="header__phone">
-                    <img class="header__phone-img" src="./icons/phone.svg" alt="phone" width="60" height="60">
+                    <img id="phone-1" class="header__phone-img" src="./icons/phone.svg" alt="phone" width="60" height="60">
     
                     <div class="header__phone-box">
                         <p class="header__phone-status">Сейчас работаем – Звоните</p>
 
-                        <a href="tel:+971547682567" class="header__phone-num">
+                        <a href="#" id="call-1" class="header__phone-num">
                             <p>+971 54 7</p>
                             <button>СМОТРЕТЬ</button>
                         </a>  
@@ -316,12 +316,12 @@
                 </div>
     
                 <div class="footer__phone">
-                    <img class="footer__phone-img" src="./icons/phone.svg" alt="phone" width="60" height="60">
+                    <img id="phone-2" class="footer__phone-img" src="./icons/phone.svg" alt="phone" width="60" height="60">
     
                     <div class="footer__phone-box">
                         <p class="footer__phone-status">Сейчас работаем – Звоните</p>
 
-                        <a href="tel:+971547682567" class="footer__phone-num">
+                        <a href="#" id="call-2" class="footer__phone-num">
                             <p>+971 54 7</p>
                             <button>СМОТРЕТЬ</button>
                         </a> 
@@ -344,9 +344,50 @@
         </div>
     </footer>
 
+    <!-- Модалка обычного звонок -->
+    <section class="modal-call" id="modal-call">
+        <div class="container container-fixed">
+            <div class="modal-call__wrapper">
+                <img class="modal-call__cross" id="modal-call__cross" src="icons/cross.svg" alt="cross">
+
+                <div class="modal-call__content">
+                    <h2 class="modal-call__content-title">Позвоните нам</h2>
+
+                    <div class="modal-call__number">
+                        <a href="tel:971507190519" class="modal-call__telephone">+971 50 719 0519</a>
+                        <div class="modal-call__bg">+971 50 719 0519</div>
+                        <button class="modal-call__btn">Показать</button>
+                    </div>
+
+                    <form class="modal-call__mail" action="mail.php" method="post">
+
+                        <h3 class="modal-call__mail-title">Или напишите в удобный вам мессенджер</h3>
+                        
+                        <div class="modal-call__socials">
+                            <a href="https://t.me/relocant_oae_bot" target="_blank">
+                                <img id="modal-call__tg" class="modal-call__socials-icon" src="./icons/socials/telegram.svg" alt="telegram">
+                            </a>
+
+                            <a href="https://wa.me/971507190519" target="_blank">
+                                <img id="modal-call__ws" class="modal-call__socials-icon" src="./icons/socials/whatsapp.svg" alt="whatsapp">
+                            </a>
+                        </div>
+
+                        <div class="modal-call__checkbox">
+                            <input checked="" type="checkbox" required>
+                            <p>Я согласен на обработку персональных данных</p>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Модалка заказа звонка -->
     <section class="modal-order" id="modal-order">
-        <div class="container">
+        <div class="container container-fixed">
             <div class="modal-order__wrapper">
                 <img class="modal-order__cross" id="modal-order__cross" src="icons/cross.svg" alt="cross">
 
@@ -433,7 +474,7 @@
 
     <!-- Модалка спасибо -->
     <section class="modal-thanks" id="modal-thanks">
-        <div class="container">
+        <div class="container container-fixed">
             <div class="modal-thanks__wrapper">
                 <img class="modal-thanks__cross" id="modal-thanks__cross" src="icons/cross.svg" alt="cross">
 
