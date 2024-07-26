@@ -38,7 +38,7 @@
     }
 
     &__wrapper {
-        padding: 30px 0 40px 0;
+        padding: 30px 0 0 0;
     }
 
     &__left-box {
@@ -65,6 +65,18 @@
         border-left: 1px solid rgba(0, 0, 0, 0.1);
         padding: 0 0 0 26px;
         text-align: start;
+    }
+
+    &__socials {
+        display: none;
+        gap: 40px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__socials-item {
+        width: 50px;
+        height: 50px;
     }
     
     &__phone {
@@ -100,7 +112,7 @@
             height: 14px;
     
             top: 0;
-            left: 10px;
+            left: 15px;
     
             border-radius: 50%;
     
@@ -117,7 +129,7 @@
             height: 14px;
         
             top: 0;
-            left: 10px;
+            left: 15px;
         
             border-radius: 50%;
             border: 0.82px solid rgb(29, 183, 128);
@@ -143,22 +155,75 @@
     }
 
     &__phone-num {
-        color: rgb(90, 80, 80);
-        font-size: 35px;
-        font-weight: 400;
-        line-height: 40px;
-        text-align: right;
-        font-family: Bebas Neue Pro Num;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+
+        p {
+            color: rgb(90, 80, 80);
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 40px;
+            font-family: Bebas Neue Pro Num;
+        }
+    
+        button {
+            padding: 5px;
+            border-radius: 10px;
+
+            font-size: 25px;
+            font-family: Bebas Neue Pro Num;
+
+            color: #495756;
+            background: #f0f2e5;
+            border: none
+        }
     }
 
     &__phone-btn {
         display: none;
     }
+
+    &__box {
+        margin: 20px 0 0 0;
+    }
+
+    &__box-title {
+        color: rgb(90, 80, 80);
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 40px;
+        font-family: Bebas Neue Pro Num;
+    }
+
+    &__box-address {
+        margin: 10px 0 0 0;
+        color: rgb(90, 80, 80);
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35px;
+        font-family: Bebas Neue Pro Num;
+    }
+
+    &__map {
+        margin: 30px 0 0 0;
+        padding: 0 0 50px 0;
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0);
+        max-width: unset;
+
+        iframe {
+            width: 100%;
+            height: 480px;
+            border-radius: 30px;
+        }
+    }
 }
 @media(min-width: 768px) {
     .footer {
         &__wrapper {
-            padding: 50px 0;
+            padding: 50px 0 0 0;
             display: flex;
             justify-content: space-between;
         }
@@ -177,9 +242,9 @@
             display: block;
         }
 
-        // &__wrapper {
-        //     margin: 40px 0 0 0;
-        // }
+        &__socials {
+            display: flex;
+        }
 
         &__phone-btn {
             display: block;

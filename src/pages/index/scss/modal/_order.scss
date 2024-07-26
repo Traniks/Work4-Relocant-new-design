@@ -94,6 +94,11 @@
 
         border: none;
         border-radius: 20px;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: #ff8f05;
+        }
     }
 }
 

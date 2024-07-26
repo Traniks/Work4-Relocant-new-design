@@ -20,8 +20,6 @@
 <body>
 
     <!-- TODO: -->
-    <!-- Добавить последний фон -->
-    <!-- Сделать слайдер прокручивающимся пальцем -->
 
     <header class="header">
         <div class="container">
@@ -37,7 +35,11 @@
     
                     <div class="header__phone-box">
                         <p class="header__phone-status">Сейчас работаем – Звоните</p>
-                        <a href="tel:+971547682567" class="header__phone-num">+971 54 768 2567</a>  
+
+                        <a href="tel:+971547682567" class="header__phone-num">
+                            <p>+971 54 7</p>
+                            <button>СМОТРЕТЬ</button>
+                        </a>  
                     </div>
 
                     <button id="order-1" class="header__phone-btn">Перезвоните мне</button>
@@ -84,7 +86,7 @@
                         <p>Аренда жилья дешевле на 50%</p>
                     </li>
                 </ul>
-                <button class="hero__btn">ПОЛУЧИТЬ<br>точный расчёт</button>
+                <button class="hero__btn">ПОЛУЧИТЬ<br>ТОЧНЫЙ РАСЧЁТ</button>
 
                 <div class="hero__wrapper">
 
@@ -284,11 +286,9 @@
     
                     <button class="socials__btn">Напишите нам<br>в мессенджере</button>
                     <div class="socials__wrapper">
-                        <!-- <a href="#"><img src="./icons/socials/viber.svg" alt="viber" class="socials__wrapper-item"></a>
-                        <a href="#"><img src="./icons/socials/whatsapp.svg" alt="whatsapp" class="socials__wrapper-item"></a>
+                        <!-- <a href="#"><img src="./icons/socials/whatsapp.svg" alt="whatsapp" class="socials__wrapper-item"></a>
                         <a href="#"><img src="./icons/socials/telegram.svg" alt="telegram" class="socials__wrapper-item"></a> -->
 
-                        <img id="viber" src="./icons/socials/viber.svg" alt="viber" class="socials__wrapper-item">
                         <img id="ws" src="./icons/socials/whatsapp.svg" alt="whatsapp" class="socials__wrapper-item">
                         <img id="tg" src="./icons/socials/telegram.svg" alt="telegram" class="socials__wrapper-item">
                     </div>
@@ -309,17 +309,35 @@
 
                     <p class="footer__text">Получение и продление<br>визы в ОАЭ</p>
                 </div>
+
+                <div class="footer__socials">
+                    <img id="ws" src="./icons/socials/whatsapp.svg" alt="whatsapp" class="footer__socials-item">
+                    <img id="tg" src="./icons/socials/telegram.svg" alt="telegram" class="footer__socials-item">
+                </div>
     
                 <div class="footer__phone">
                     <img class="footer__phone-img" src="./icons/phone.svg" alt="phone" width="60" height="60">
     
                     <div class="footer__phone-box">
                         <p class="footer__phone-status">Сейчас работаем – Звоните</p>
-                        <a href="tel:+971547682567" class="footer__phone-num">+971 54 768 2567</a>  
+
+                        <a href="tel:+971547682567" class="footer__phone-num">
+                            <p>+971 54 7</p>
+                            <button>СМОТРЕТЬ</button>
+                        </a> 
                     </div>
 
                     <button id="order-2" class="footer__phone-btn">Перезвоните мне</button>
                 </div>
+            </div>
+
+            <div class="footer__box">
+                <div class="footer__box-title">Адрес офиса</div>
+                <a class="footer__box-address" href="https://maps.app.goo.gl/jgZH4ftEGmQpP7EN9" target="_blank">UAE, Dubai, Expo Village Residences 2A - UNBOX - 1 этаж</a>
+            </div>
+            
+            <div class="footer__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7234.169678139046!2d55.1435!3d24.963228000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f72d1919e0329%3A0x43ef44890ee2fc09!2sExpo%20Village%20Residences%202A!5e0!3m2!1sru!2sru!4v1721980090097!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="footer__dotted"></div>
 
@@ -349,37 +367,7 @@
                             document.querySelector('#modal-thanks').classList.add('modal-thanks_active');
                             document.body.style.overflow = 'hidden';
                             document.querySelector('#modal-order').classList.remove('modal-order_active');
-                        }
-                        ym(96940764, 'reachGoal', 'button_18'); return true;"
-                        >ОТПРАВИТЬ</button>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    
-    <!-- Модалка вайбер -->
-    <section class="modal-viber" id="modal-viber">
-        <div class="container container-fixed">
-            <div class="modal-viber__wrapper">
-                <img class="modal-viber__cross" id="modal-viber__cross" src="icons/cross.svg" alt="cross">
-
-                <div class="modal-viber__content">
-                    <h2 class="modal-viber__content-title">Напишите нам в viber</h2>
-
-                    <form class="modal-viber__mail" action="mail.php" method="post">
-                        
-                        <div class="modal-viber__socials">
-                            <a href="https://wa.me/971507190519" target="_blank">
-                                <img id="modal-viber__viber" class="modal-viber__socials-icon" src="./icons/socials/viber.svg" alt="whatsapp">
-                            </a>
-                        </div>
-
-                        <div class="modal-viber__checkbox">
-                            <input checked="" type="checkbox" required>
-                            <p>Я согласен на обработку персональных данных</p>
-                        </div>
+                        }">ОТПРАВИТЬ</button>
                     </form>
                 </div>
 
@@ -437,6 +425,23 @@
                             <p>Я согласен на обработку персональных данных</p>
                         </div>
                     </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Модалка спасибо -->
+    <section class="modal-thanks" id="modal-thanks">
+        <div class="container">
+            <div class="modal-thanks__wrapper">
+                <img class="modal-thanks__cross" id="modal-thanks__cross" src="icons/cross.svg" alt="cross">
+
+                <div class="modal-thanks__content">
+                    <div class="modal-thanks__content-title">
+                        <p>Спасибо за отправку ваших данных!</p>
+                        <p style="margin: 10px 0 0 0;">Скоро мы с вами свяжемся</p>
+                    </div>
                 </div>
 
             </div>

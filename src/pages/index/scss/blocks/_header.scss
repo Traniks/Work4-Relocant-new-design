@@ -71,7 +71,7 @@
             height: 14px;
 
             top: 0;
-            left: 10px;
+            left: 6px;
 
             border-radius: 50%;
 
@@ -86,7 +86,7 @@
             height: 14px;
 
             top: 0;
-            left: 10px;
+            left: 6px;
 
             border-radius: 50%;
             border: 0.82px solid rgb(29, 183, 128);
@@ -112,16 +112,28 @@
     }
 
     &__phone-num {
-        color: var(--text-title);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
 
-        font-size: 25px;
-        font-weight: 400;
-        line-height: 28px;
-
-        text-align: right;
-        font-family: DAMN;
-
+        p {
+            color: var(--text-title);
+            
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
         
+            font-family: DAMN;
+        }
+
+        button {
+            padding: 5px;
+            border-radius: 10px;
+            color: #495756;
+            background: #f0f2e5;
+            border: none
+        }
     }
 
     &__phone-btn {
@@ -175,11 +187,23 @@
             display: block;
         }
         &__phone-num {
-            color: rgb(90, 80, 80);
-            font-family: Bebas Neue Pro Num;
-            font-size: 35px;
-            font-weight: 400;
-            line-height: 40px;
+
+            p {
+                color: rgb(90, 80, 80);
+                font-family: Bebas Neue Pro Num;
+                font-size: 35px;
+                font-weight: 400;
+                line-height: 40px;
+            }
+        
+            button {
+                padding: 5px;
+                
+                font-family: Bebas Neue Pro Num;
+                font-size: 20px;
+                font-weight: 400;
+
+            }
         }
         &__phone-btn {
             display: block;

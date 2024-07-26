@@ -24,12 +24,11 @@ export function modal() {
 
 	open('order-1', 'modal-order')
 	open('order-2', 'modal-order')
-	open('viber', 'modal-viber')
 	open('ws', 'modal-ws')
 	open('tg', 'modal-tg')
 	
 	close('modal-order')
-	close('modal-viber')
 	close('modal-ws')
 	close('modal-tg')
+	close('modal-thanks')
 }
