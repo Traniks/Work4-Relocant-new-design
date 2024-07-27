@@ -14,12 +14,18 @@
 
     <link rel="stylesheet" href="../index/scss/base-and-block.scss">
     <link rel="stylesheet" href="scss/index.scss">
+
+    <style>
+        @media only screen and (min-width: 1024px) and (max-width: 1480px) {
+            body {
+                zoom: 0.85;
+            }
+        }
+    </style>
     
     <title>Relocant</title>
 </head>
 <body>
-
-    <!-- TODO: -->
 
     <header class="header">
         <div class="container">
@@ -48,7 +54,7 @@
         </div>
     </header>
 
-    <main>
+    <main style="position: relative;">
 
         <div class="bg-1"></div>
         <div class="bg-2"></div>
@@ -302,44 +308,47 @@
         <div class="container">
             <h2 class="footer__title">Свяжитесь<br><span>с Нами</span></h2>
 
-            <div class="footer__dotted" style="margin: 40px 0 0 0;"></div>
-            <div class="footer__wrapper">
-                <div class="footer__left-box">
-                    <a href="index.html"><img src="./icons/logo.svg" alt="logo" class="footer__logo" width="205" height="60"></a>
-
-                    <p class="footer__text">Получение и продление<br>визы в ОАЭ</p>
-                </div>
-
-                <div class="footer__socials">
-                    <img id="ws" src="./icons/socials/whatsapp.svg" alt="whatsapp" class="footer__socials-item">
-                    <img id="tg" src="./icons/socials/telegram.svg" alt="telegram" class="footer__socials-item">
-                </div>
-    
-                <div class="footer__phone">
-                    <img id="phone-2" class="footer__phone-img" src="./icons/phone.svg" alt="phone" width="60" height="60">
-    
-                    <div class="footer__phone-box">
-                        <p class="footer__phone-status">Сейчас работаем – Звоните</p>
-
-                        <a href="#" id="call-2" class="footer__phone-num">
-                            <p>+971 54 7</p>
-                            <button>СМОТРЕТЬ</button>
-                        </a> 
-                    </div>
-
-                    <button id="order-2" class="footer__phone-btn">Перезвоните мне</button>
-                </div>
-            </div>
-
             <div class="footer__box">
-                <div class="footer__box-title">Адрес офиса</div>
-                <a class="footer__box-address" href="https://maps.app.goo.gl/jgZH4ftEGmQpP7EN9" target="_blank">UAE, Dubai, Expo Village Residences 2A - UNBOX - 1 этаж</a>
+                <a class="footer__box-address" href="https://maps.app.goo.gl/jgZH4ftEGmQpP7EN9" target="_blank">Адрес офиса: UAE, Dubai, Expo Village Residences 2A - UNBOX - 1 этаж</a>
             </div>
             
             <div class="footer__map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7234.169678139046!2d55.1435!3d24.963228000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f72d1919e0329%3A0x43ef44890ee2fc09!2sExpo%20Village%20Residences%202A!5e0!3m2!1sru!2sru!4v1721980090097!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="footer__dotted"></div>
+
+            <div class="footer__main">
+                <!-- <div class="container"> -->
+                    <div class="footer__dotted"></div>
+                    <div class="footer__wrapper">
+                        <div class="footer__left-box">
+                            <a href="index.html"><img src="./icons/logo.svg" alt="logo" class="footer__logo" width="205" height="60"></a>
+        
+                            <p class="footer__text">Получение и продление<br>визы в ОАЭ</p>
+                        </div>
+        
+                        <div class="footer__socials">
+                            <img id="ws" src="./icons/socials/whatsapp.svg" alt="whatsapp" class="footer__socials-item">
+                            <img id="tg" src="./icons/socials/telegram.svg" alt="telegram" class="footer__socials-item">
+                        </div>
+            
+                        <div class="footer__phone">
+                            <img id="phone-2" class="footer__phone-img" src="./icons/phone.svg" alt="phone" width="60" height="60">
+            
+                            <div class="footer__phone-box">
+                                <p class="footer__phone-status">Сейчас работаем – Звоните</p>
+        
+                                <a href="#" id="call-2" class="footer__phone-num">
+                                    <p>+971 54 7</p>
+                                    <button>СМОТРЕТЬ</button>
+                                </a> 
+                            </div>
+        
+                            <button id="order-2" class="footer__phone-btn">Перезвоните мне</button>
+                        </div>
+                    </div>
+                    <div class="footer__dotted"></div>
+                <!-- </div> -->
+            </div>
 
         </div>
     </footer>
