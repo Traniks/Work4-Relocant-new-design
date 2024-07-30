@@ -66,8 +66,13 @@ export function modal() {
 	open('call-1', 'modal-call')
 	open('call-2', 'modal-call')
 
-	open('ws', 'modal-ws')
-	open('tg', 'modal-tg')
+	open('ws-1', 'modal-ws')
+	open('ws-2', 'modal-ws')
+	open('ws-3', 'modal-ws')
+	
+	open('tg-1', 'modal-tg')
+	open('tg-2', 'modal-tg')
+	open('tg-3', 'modal-tg')
 
 	// Закрытие модалок
 	close('modal-call')

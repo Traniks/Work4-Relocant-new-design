@@ -35,7 +35,7 @@
         right: 0;
         left: 0;
         z-index: var(--index-elem-3);
-        padding: 0 0 40px 0;
+        padding: 0 0 100px 0;
         background-color: var(--bg-main);
     }
 
@@ -226,6 +226,42 @@
             border-radius: 30px;
         }
     }
+
+    &__socials-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: var(--index-elem-4);
+
+        width: 100%;
+        background: #ffffff;
+        padding: 10px 0;
+    }
+
+    &__socials-mobile-wrapper {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__socials-mobile-item {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__socials-mobile-title {
+        font-size: 20px;
+        line-height: 16px;
+
+        font-family: Bebas Neue Pro Num;
+        color: #514f4f;
+        font-weight: 700;
+    }
 }
 @media(min-width: 768px) {
     .footer {
@@ -284,6 +320,12 @@
             &:hover {
                 background: rgba(255, 255, 255, 0.3);
             }
+        }
+        &__main {
+            padding: 0 0 40px 0;
+        }
+        &__socials-mobile {
+            display: none;
         }
     }
 }
